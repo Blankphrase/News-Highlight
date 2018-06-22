@@ -13,7 +13,7 @@ class TestArticle(unittest.TestCase):
         '''
         runs before every test
         '''
-        self.new_article = Article("Cliff kasera", "How to catch a rabbit", "Article describing efficient ways of catching rabbits", "https://rabbitCatcher.com", "https://rabbitCatcher.com/rabbit.jpg", "2018-05-13T12:37:20Z")
+        self.new_article = Article("How to catch a rabbit", "Article describing efficient ways of catching rabbits", "https://rabbitCatcher.com", "https://rabbitCatcher.com/rabbit.jpg", "2018-05-13T12:37:20Z")
 
     def test_instance(self):
         '''
@@ -26,10 +26,9 @@ class TestArticle(unittest.TestCase):
 		test_init test case to test if the object is initialized porperly
 		'''
 
-        self.assertEqual(self.new_article.author, "Cliff kasera")
         self.assertEqual(self.new_article.title, "How to catch a rabbit")
         self.assertEqual(self.new_article.description, "Article describing efficient ways of catching rabbits")
         self.assertEqual(self.new_article.url, "https://rabbitCatcher.com")
         self.assertEqual(self.new_article.image, "https://rabbitCatcher.com/rabbit.jpg")
-        self.assertEqual(self.new_article.publish_date,
+        self.assertEqual(self.new_article.published,
                          "2018-05-13T12:37:20Z")
