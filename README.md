@@ -26,6 +26,7 @@ You need to have Python 3.6 installed to run this program.
 `(virtual)$ python3.6 -m pip install flask-script`
 
 create an Api key from https://newsapi.org and use it to run the app
+Live link to the app @: https://aqueous-brook-26159.herokuapp.com/
 
 
 ## License
