@@ -26,7 +26,9 @@ class TestArticle(unittest.TestCase):
 		test_init test case to test if the object is initialized porperly
 		'''
 
-        self.assertEqual(self.new_article.title, "How to catch a rabbit")
+		self.assertEqual(self.new_article.title, "How to catch a rabbit")
+
+		
         self.assertEqual(self.new_article.description, "Article describing efficient ways of catching rabbits")
         self.assertEqual(self.new_article.url, "https://rabbitCatcher.com")
         self.assertEqual(self.new_article.image, "https://rabbitCatcher.com/rabbit.jpg")
