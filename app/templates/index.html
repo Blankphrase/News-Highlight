@@ -1,0 +1,74 @@
+{% extends 'base.html' %} 
+{% import 'macros.html' as macro %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <h2><em>GENERAL NEWS</em></h2>
+        <div class="col-md-6">
+            <img src="{{url_for('static',filename='images/general.jpg')}}" style="height: 370px; width: 550px;" alt="general" class="well img-responsive b">
+        </div>
+        <div class="col-md-6">
+            <ul>
+                {{ macro.displaySourceList(general) }}
+            </ul>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-md-6">
+                <h2><em>BUSINESS NEWS</em></h2>
+            <img src="{{url_for('static',filename='images/business.jpg')}}" style="height: 370px; width: 550px;" alt="business" class="well img-responsive b">
+        </div>
+        <div class="col-md-6" style="padding-top: 45px">
+            <ul>
+                {{ macro.displaySourceList(business) }}
+            </ul>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-md-6">
+                <h2><em>ENTERTAINMENT NEWS</em></h2>
+            <img src="{{url_for('static',filename='images/entertainment.jpg')}}" style="height: 370px; width: 550px;" alt="entertainment" class="well img-responsive b">
+        </div>
+        <div class="col-md-6" style="padding-top: 45px">
+            <ul>
+                {{ macro.displaySourceList(entertainment) }}
+            </ul>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-md-6">
+                <h2><em>SCIENCE NEWS</em></h2>
+            <img src="{{url_for('static',filename='images/science.png')}}" style="height: 370px; width: 550px;" alt="science" class="well img-responsive b">
+        </div>
+        <div class="col-md-6" style="padding-top: 45px">
+            <ul>
+                {{ macro.displaySourceList(science) }}
+            </ul>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-md-6">
+                <h2><em>TECHNOLOGY NEWS</em></h2>
+            <img src="{{url_for('static',filename='images/tech.png')}}" style="height: 370px; width: 550px;" alt="technology" class="well img-responsive b">
+        </div>
+        <div class="col-md-6" style="padding-top: 45px">
+            <ul>
+                {{ macro.displaySourceList(technology) }}
+            </ul>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-md-6">
+                <h2><em>HEALTH NEWS</em></h2>
+            <img src="{{url_for('static',filename='images/health.jpg')}}" style="height: 370px; width: 550px;" alt="health" class="well img-responsive b">
+        </div>
+        <div class="col-md-6" style="padding-top: 45px">
+            <ul>
+                {{ macro.displaySourceList(health) }}
+            </ul>
+        </div>
+        </div>
+    </div>
+</div>
+{% endblock%}
