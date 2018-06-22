@@ -11,7 +11,8 @@ class TestSource(unittest.TestCase):
         '''
         runs before every test
         '''
-        self.new_source = Source("bbc-news-uk", "BBC NEWS", "Most trusted news source.", "http://www.bbc.co.uk/news", "news")
+        self.new_source = Source("bbc-news-uk",  "news", "BBC NEWS", "http://www.bbc.co.uk/news",
+                                 "Most trusted news source.")
 
     def test_instance(self):
         self.assertTrue(isinstance(self.new_source, Source))
@@ -22,11 +23,11 @@ class TestSource(unittest.TestCase):
         '''
         self.assertEqual(self.new_source.id, "bbc-news-uk")
 		    
+        self.assertEqual(self.new_source.category, "news")
         self.assertEqual(self.new_source.name, "BBC NEWS")
 		    
-        self.assertEqual(self.new_source.description, "Most trusted news source.")
         self.assertEqual(self.new_source.url, "http://www.bbc.co.uk/news")
-        self.assertEqual(self.new_source.category, "news")
+        self.assertEqual(self.new_source.description, "Most trusted news source.")
 
 
 		
